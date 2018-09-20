@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/get_event_title"
+                android:paddingLeft="10dp"
+android:background="#ddd"
+                android:layout_marginBottom="5dp"
+                android:hint="Remainder title..."
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <EditText
+                android:id="@+id/get_event_message"
+                android:hint="Message..."
+                android:layout_weight="1"
+                android:minHeight="200dp"
+                android:gravity="fill_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="10dp"
+                android:background="#ddd"
+                android:layout_marginBottom="5dp"
+                android:textStyle="normal"/>
+
+            <LinearLayout
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                android:background="#ddd"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/get_event_date"
+                    android:hint="Enter date"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:focusable="false"
+                    android:paddingLeft="10dp"
+                    android:background="#ddd"
+                    android:editable="false"
+                    android:layout_height="50dp" />
+                <View
+                    android:background="#fff"
+                    android:layout_width="5dp"
+                    android:layout_height="50dp"/>
+                <EditText
+                    android:hint="Enter time"
+                    android:layout_weight="1"
+                    android:id="@+id/get_event_time"
+                    android:focusable="false"
+
+                    android:editable="false"
+                    android:layout_width="0dp"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/save_event"
+                android:text="save event"
+                android:textColor="#fff"
+                android:background="@color/colorMintDark"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+
+
+</ScrollView>

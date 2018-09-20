@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cse.cou.mobarak.digital_diary">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".alarm.AlarmRecever"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".activity.AddContact"
+            android:parentActivityName=".activity.MainActivity"
+            />
+        <activity android:name=".activity.ShowContactDetails"
+            android:parentActivityName=".activity.MainActivity"
+            />
+        <activity android:name=".activity.EditNotes"
+            android:parentActivityName=".activity.MainActivity"
+            />
+        <activity android:name=".activity.NotesActivity"
+            android:parentActivityName=".activity.MainActivity"
+            />
+        <activity android:name=".activity.EditContact"
+            android:parentActivityName=".activity.MainActivity"
+            />
+        <activity android:name=".activity.AddEvent"
+            android:parentActivityName=".activity.RemainderListActivity"
+            />
+        <activity android:name=".activity.RemainderListActivity"
+            android:parentActivityName=".activity.MainActivity"
+            >
+
+        </activity>
+        <activity android:name=".MyNotificationReceive"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog.Alert"
+            ></activity>
+    </application>
+
+</manifest>
